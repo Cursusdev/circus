@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" />
+  <title>Wild Circus</title>
+</head>
+<body>
+  <header>
+    <h1>The wild circus troupe presents you</h1>
+    <nav class="menu">
+      <ul id="nav">
+        <li><a href="#skills">Performances</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="wordart">Wild</h2>
+    <h2 class="wordart">Circus</h2>
+    <section id="skills">
+      <h2>Performances</h2>
+      <ul>
+        <li>
+          <h3>Laugh</h3>
+          <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+        </li>
+        <li>
+          <h3>Dream</h3>
+          <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+        </li>
+        <li>
+          <h3>Marvel at</h3>
+          <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+        </li>
+      </ul>
+    </section>
+    <hr/>
+    <section id="about">
+      <h2>About us</h2>
+      <h3 class="title">On tour throughout the United State</h3>
+      <ul>
+        <li>
+          <h3>Los Angeles</h3>
+          <p>From February 1 to March 13</p>
+        </li>
+        <li>
+          <h3>Chicago</h3>
+          <p>From March 25 to May 5</p>
+        </li>
+        <li>
+          <h3>San Francisco</h3>
+          <p>From May 25 to June 5</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h3>Boston</h3>
+          <p>From July 10 to September 5</p>
+        </li>
+        <li>
+          <h3>Washington</h3>
+          <p>October 10 to November 18</p>
+        </li>
+        <li>
+          <h3>New York</h3>
+          <p>From December 5 to January 5</p>
+        </li>
+      </ul>
+    </section>
+    <hr/>
+    <section id="prices">
+      <h2>Prices</h2>
+      <div class="container">
+        <div class="active-animation">
+          <h4>Estimate the price of your seats</h4>
+          <label for="adult">Adults <span>8$</span></label>
+          <input id="adult" type="number" min="0" max="99" step="1" placeholder="?" required/>
+          <label for="child">Childs <span>5$</span></label>
+          <input id="child" type="number" min="0" max="99" step="1" placeholder="?" />
+          <p>Price:<span id="sum"></span></p>
+          <h4>Buy on site</h4>
+        </div>
+      </div>
+    </section>
+    <hr/>
+  </main>
+  <footer id="contact">
+    <h2>Contact</h2>
+    <a href="https://www.somprod.com/cv/index.html">
+      <img src="https://www.somprod.com/cv/favicons/favicon-96x96.png" width="50" height="50" alt="logo-somprod" />
+      Yannick Goalen (curriculum vitae)
+    </a>
+    <a href="https://wildcodeschool.com">
+      <img src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png" width="100" height="50" alt="wild school" />
+      Wild school (site)
+    </a>
+    <a href="https://github.com/Cursusdev">
+      <img src="https://raw.githubusercontent.com/aws-amplify/docs/master/images/Logos/GitHub-Mark-64px.png" width="50" height="50" alt="logo-github" />
+      Github (pro link)
+    </a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

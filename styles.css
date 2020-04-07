@@ -1,0 +1,385 @@
+ /* hide only with codepen */
+ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  height: 800px;
+  background-image: url('https://i.pinimg.com/474x/5d/54/bf/5d54bf48cf02cd6ae391deda98ede692.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  background-color: rgb(24, 23, 23);
+}
+h1 {
+  margin-left: 2%;
+}
+ul li{
+  list-style: none;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.3s ease;
+}
+hr {
+  border: 0 solid black;
+}
+header ul {
+  z-index: 10;
+}
+#nav .active a {
+  color: black;
+  font-size: 1.5em;
+}
+.menu {
+  background-color: rgb(223, 77, 77);
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  height: 3.8em;
+  font-size: 1.5em;
+  z-index: 10;
+}
+.menu li {
+  display: inline;
+  padding: 30px;
+  margin: -1%;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.menu a:hover, a:active {
+  background-color :rgb(223, 77, 77, 0.9);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid whitesmoke;
+}
+main {
+  box-sizing: content-box;
+  width: 100%;
+}
+main h2, footer h2 {
+  margin: 10% 5% 20% 5%;
+  font-size: 2em;
+}
+.wordart {
+  transform: skew(0deg, -15deg) scale(1, 1.5);
+  text-shadow: 0.01em 0em 0 #802700, 0em 0.01em 0 #c23d00, 0.02em 0.01em 0 #802700, 0.01em 0.02em 0 #c23d00, 0.03em 0.02em 0 #802700, 0.02em 0.03em 0 #c23d00, 0.04em 0.03em 0 #802700, 0.03em 0.04em 0 #c23d00, 0.05em 0.04em 0 #802700, 0.04em 0.05em 0 #c23d00, 0.06em 0.05em 0 #802700, 0.05em 0.06em 0 #c23d00, 0.07em 0.06em 0 #802700, 0.06em 0.07em 0 #c23d00, 0.08em 0.07em 0 #802700, 0.07em 0.08em 0 #c23d00;
+  font-size: 30vw;
+  margin: 0 0 0 30%;
+  z-index: 0;
+}
+.wordart:nth-child(2n) {
+  margin: 0 0 0 25%;
+}
+#skills {
+  margin-top: 10vh;
+}
+#skills ul, #about ul {
+  display: table;
+  table-layout: fixed;
+  font-size: 1.3em;
+}
+#skills ul > li, #about ul > li {
+  display: table-cell;
+  box-sizing: content-box;
+  text-align: justify;
+}
+#skills li > h3 {
+  background-color: rgb(223, 77, 77, 0.9);
+  color: lightgreen;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 5%;
+  border-radius: 25px;
+}
+#skills li > p, #about li > p {
+  color: lightgreen;
+  vertical-align: top;
+  margin: 0 15px 20px 20px;
+}
+#skills li > p {
+  background-color: rgb(24, 23, 23, 0.8);
+  padding: 5%;
+  border-radius: 25px;
+  line-height: 2em;
+}
+#about li > h3, #about li > p {
+  text-align: center;
+}
+#about .title {
+  color: lightgreen;
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+  width: 40vw;
+  background-color: rgb(24, 23, 23, 0.8);
+  border-radius: 25px;
+}
+#about ul {
+  background-color: rgb(223, 77, 77, 0.9);
+  margin: 1% auto;
+  width: 60vw;
+  border-radius: 25px;
+}
+#prices .container {
+  background-image: url('http://www.decorecebo.fr/2063-thickbox_default/stickers-etoiles-circus.jpg');
+  background-repeat: no-repeat;
+  background-size: 250px 250px;
+  background-position: 250px;
+  background-color: white;
+  width: 494px;
+  height: 387px;
+  margin: 0 20%;
+  color: red;
+  font-size: 25px;
+  border-radius: 25px;
+  padding-bottom: 3%;
+}
+#prices h4 {
+  width: 100%;
+  text-align: center;
+  margin: 3% 0 4% 0;
+}
+#prices label, #prices p {
+  display: table;
+  margin: 0 0 0 16%;
+  padding: 3px 0 3px 0;
+  text-align: center;
+  width: 22%;
+  border-width: 5px;
+  border-color: orange;
+  border-style: dotted;
+}
+#prices span {
+  color: blue;
+  font-size: 38px;
+}
+.active-animation {
+  background-image: 
+    radial-gradient(yellow 20%, transparent 20%),
+    radial-gradient(red 20%, transparent 20%),
+    radial-gradient(yellow 20%, transparent 20%),
+    radial-gradient(red 20%, transparent 20%);
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-position: left top, right top, left bottom, left top;
+  padding: 6px 0 8px 0;
+  background-size: 38px 38px;
+  animation: border-dance 1s infinite;
+  transition: all 1.3s ease-in-out;
+}
+.active-animation:hover {
+	transform: rotate(360deg) scale(1.4);
+}
+@keyframes border-dance {
+  0% {
+    background-image: 
+    radial-gradient(yellow 20%, transparent 20%),
+    radial-gradient(red 20%, transparent 20%),
+    radial-gradient(yellow 20%, transparent 20%),
+    radial-gradient(red 20%, transparent 20%);
+  }
+  100% {
+    background-image: 
+    radial-gradient(red 20%, transparent 20%),
+    radial-gradient(yellow 20%, transparent 20%),
+    radial-gradient(red 20%, transparent 20%),
+    radial-gradient(yellow 20%, transparent 20%);
+  }
+}
+input[type=number] {
+  margin-left: 41%;
+  padding: 0 0 0 3%;
+  width: 8%;
+  font-size: 30px;
+  font-family: 'Amatic SC';
+  font-weight: 900;
+  border: 1px solid red;
+  border-radius: 30px;
+}
+input:focus {
+  border-color: rgba(229, 103, 23, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+  outline: 0 none;
+}
+#contact {
+  margin-top: 15vh;
+  height: 110vh;
+}
+#contact img {
+  vertical-align: middle;
+  margin-right: 15%;
+}
+#contact a, #contact a:hover {
+  display: flex;
+  background-color : whitesmoke;
+  font-size: 1.2rem;
+  color: rgb(24, 23, 23);
+  margin: 2% 35%;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1201px) {
+  html {
+    scroll-behavior: smooth;
+    margin: 0 15% 0 15%;
+  }
+  body {
+    background-color: rgb(24, 23, 23);
+  }
+  .wordart {
+    margin-left: 30%;
+    font-size: 18vw;
+  }
+  #skills ul {
+    margin: 0;
+    padding: 1vw;
+    width: 67vw;
+  }
+}
+
+@media screen and (max-width: 740px) and (min-width: 481px) {
+  .menu {
+    height: 18%;
+  }
+  .menu li {
+    padding: 0 20px 0 20px;
+    line-height: 1.8em;
+  }
+  .menu a:hover, a:active {
+    background-color :rgb(223, 77, 77, 0.9);
+    margin: 1%;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  #skills h2, #about h2, #prices h2 {
+    margin-bottom: 45%;
+  }
+  #skills ul, #about ul {
+    padding: 0;
+    width: 100%;
+  }
+  #skills li > h3 {
+    font-size: 1.8rem;
+  }
+  #skills li > p {
+    margin: 0 5px 10px 5px;
+    font-size: 1.3rem;
+  }
+  #about h3.title {
+    width: 80vw;
+  }
+  #prices > div {
+    background-position: 100%;
+    width: 470px;
+    height: 395px;
+    margin: 0 auto;
+  }
+  #prices label, #prices p {
+    margin: 0 0 0 8%;
+  }
+  .active-animation {
+    padding: 6px 0 12px 0;
+  }
+  .active-animation:hover {
+    transform: rotate(0) scale(1);
+  }
+  #contact h2 {
+    margin-bottom: 50%;
+  }
+  #contact a, #contact a:hover {
+    margin: 4% 25%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  li.active {
+    padding: 0;
+  }
+  .menu {
+    height: 21%;
+  }
+  .menu li {
+    padding: 0 20px 0 20px;
+    line-height: 1.8em;
+  }
+  .menu a:hover, a:active {
+    background-color :rgb(223, 77, 77, 0.9);
+    margin: 0;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  #skills h2, #about h2, #prices h2 {
+    margin-bottom: 45%;
+  }
+  #skills ul, #about ul {
+    padding: 0;
+    width: 100%;
+  }
+  #skills ul > li {
+    display: table;
+    box-sizing: content-box;
+    text-align: justify;
+    width: 100%;
+  }
+  #about h3.title {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  #about li > p {
+    margin: 0 5px 10px 10px;
+  }
+  #prices > div {
+    margin: 0 auto;
+    background-position: 100%;
+    width: 356px;
+    height: 410px;
+  }
+  #prices label, #prices p {
+    margin: 0 0 0 8%;
+  }
+  .active-animation {
+    padding: 6px 0 3px 0;
+  }
+  .active-animation:hover {
+    transform: rotate(0) scale(1);
+  }
+  input[type=number] {
+    margin-left: 41%;
+    padding: 0 0 0 3%;
+    width: 15%;
+    font-size: 40px;
+    font-family: 'Amatic SC';
+    font-weight: 900;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #contact h2 {
+    margin-bottom: 55%;
+  }
+  #contact a, #contact a:hover {
+    margin: 4% 20%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+}
